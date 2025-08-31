@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coffee House</title>
+  <style>
+    body { 
+background: #E3C4A5;
+
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* Header */
+    .header {
+      background-color: #A06931;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 9px 20px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+   .navbar {
+      background: #A06931; color: #fff; padding: 10px 30px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .navbar a { color: #fff; text-decoration: none; margin-left: 20px; }
+
+    /* Hero section */
+    .hero {
+      background-color: #7D5226;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      margin-bottom: 20px;
+    }
+
+    .button {
+      
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+border:3px solid #E3C4A5;
+border-radius: 19px;
+    }
+     .button:hover {
+      background-color:#E3C4A5;
+      transform: scale(1.07);
+      color:#7D5226
+    }
+    
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 200px;
+      background: #fff;
+border-radius: 15px;
+background: linear-gradient(to bottom, #a06931 0%, #d9ad82 100%);
+}
+
+	  
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-card h3 {
+      margin: 10px 0;
+    }
+
+    .product-card .btn {
+      background-color: #6d4c41;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      border-radius: 17px;
+    }
+.product-card:hover {
+      transform: scale(1.12);
+    }
+
+.section {
+      background: #7D5226;
+      color: #fff3e0;
+      border-radius: 15px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      gap: 30px;
+    }
+.container {
+      max-width: 1050px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section img {
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+.section img:hover {
+      transform: scale(1.12);
+    }
+
+    .text {
+      max-width: 500px;
+    }
+
+    .text h2 {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+
+    .text h4 {
+      font-weight: normal;
+      color: #E3C4A5;
+      margin: 0;
+    }
+
+    .text p {
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+
+    .text a {
+      display: inline-block;
+      color: #ffab91;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .text a:hover {
+      text-decoration: underline;
+    }
+    
+.reviews {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* space between reviews */
+      flex-wrap: wrap; /* wrap on small screens */
+margin-bottom:90px;
+margin-top:70px;
+    }
+  .review {
+      background-color: #d69853;
+      padding: 15px;
+      border-radius: 10px;
+      width: 250px;
+      box-sizing: border-box;
+background: linear-gradient(to bottom, #ce965f 0%, #7d5226 100%)
+    }
+
+    .review img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .review p {
+      margin: 15px 0 10px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .review h4 {
+      color: #fff;
+      margin: 0;
+    }
+
+.review:hover {
+      transform: scale(1.07);
+    }
+
+ .footer {
+       background-color: #A06931;
+      color: white;
+    width: 100%;
+    max-width: 1400px;
+    margin: 50 auto;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+     }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">&nbsp;&nbsp;☕ Coffee House</div>
+    <div class="navbar">
+      <a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/index.html#">Home</a>
+<a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/coffee(about).html">About</a>
+      <a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/Coffee(menu).html">Menu</a>
+      <a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/Coffee(contact).html">Contact</a>
+    
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Welcome to Coffee House</h1>
+    <p>Freshly roasted beans, delivered to your door.</p>
+    <a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/Coffee(menu).html" class="button">Shop Now</a>
+  </div>
+<!-- Featured Products -->
+  <section class="products">
+    <center><h2><font color="#7D5226">Featured Coffee</h2></font>
+    <div class="product-grid">
+
+            <div class="product-card">
+        <img src="C:\Users\Deepu\Desktop\Coffee House\—Pngtree—glass cup of espresso coffee_20376027.png">
+        <h3>Espresso Roast</h3>
+        <p>₹100</p>
+        <a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/Coffee(menu).html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="C:\Users\Deepu\Desktop\Coffee House\—Pngtree—iced coffee cappuccino cup_15683400.png">
+        <h3>Cappuccino</h3>
+        <p>₹110</p>
+        <a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/Coffee(menu).html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="C:\Users\Deepu\Desktop\Coffee House\—Pngtree—cold coffee latte_15892244.png" alt="House Drip" />
+        <h3>Latte</h3>
+        <p>₹100</p>
+        <a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/Coffee(menu).html" class="btn">Shop Now</a>
+      </div>
+
+        <div class="product-card">
+        <img src="C:\Users\Deepu\Desktop\Coffee House\—Pngtree—americano coffee beans transparent white_9097377.png" alt="Colombian Blend" />
+        <h3>Americano</h3>
+        <p>₹110</p>
+        <a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/Coffee(menu).html" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+<div class="container">
+<div class="section">
+    <img src="C:\Users\Deepu\Desktop\Coffee House\—Pngtree—yellow coffee bag beautiful coffee_3877689.png" alt="Coffee Cup">
+    <div class="text">
+      <h4>Special Blend</h4>
+      <h2>Perfect Morning Brew</h2>
+      <p>Wake up to the rich aroma of our handcrafted coffee. Smooth, bold, and perfect for your daily ritual.</p>
+      <a href="file:///C:/Users/Deepu/Desktop/Coffee%20House/Coffee(menu).html">Shop Now →</a>
+    </div>
+  </div>
+</div>
+
+<center><font color="#7D5226"><br><h1>Customer Reviews</h1></font>
+  <div class="reviews">
+    <div class="review">
+      <img src="C:\Users\Deepu\Desktop\Coffee House\review2.jpg" alt="Karan">
+      <p>"Loved the mocha and friendly staff."</p>
+      <h4>- Karan</h4>
+    </div>
+
+    <div class="review">
+      <img src="C:\Users\Deepu\Desktop\Coffee House\review3.jpg" alt="Tanya">
+      <p>"Perfect spot to relax and sip."</p>
+      <h4>- Tanya</h4>
+    </div>
+    
+<div class="review">
+      <img src="C:\Users\Deepu\Desktop\Coffee House\review4.jpg" alt="Aditya">
+      <p>"Simple and delicious—no fuss.."</p>
+      <h4>- Aditya</h4>
+    </div>
+    <div class="review">
+      <img src="C:\Users\Deepu\Desktop\Coffee House\review5.jpg" alt="Shreya">
+      <p>"Best coffee in town!"</p>
+      <h4>- Shreya</h4>
+    </div>
+
+  </div>
+
+  <!-- Contact Footer -->
+<div class="footer">
+ 
+    <p>Contact us at <a href="mailto:info@coffeehouse.com" style="color:#ffca28;">info@coffeehouse.com</a></p>
+    <p>&copy; 2025 Coffee House</p>
+  </footer>
+</body>
+</html>
